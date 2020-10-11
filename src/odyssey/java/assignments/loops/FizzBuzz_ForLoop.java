@@ -4,7 +4,7 @@ public class FizzBuzz_ForLoop {
     public static void main(String []args) { // Java program to print Fizz Buzz Using For Loop..
         int n = 20;
 
-        for (int i = 1; i <= n; i++) {
+        for (int i = 1; i <= n; i++){
             if (((i % 3) == 0) && ((i % 5) == 0))
                 System.out.println("fizzbuzz");
             else if ((i % 3) == 0)
