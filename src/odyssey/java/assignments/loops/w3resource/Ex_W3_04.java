@@ -10,10 +10,9 @@ public class Ex_W3_04 {
         System.out.println("Number " + i + " :" + i);
         sum = sum + i;
         }
-
         avg = sum/10.0;
         System.out.println("The sum of 10 no is : " + sum + "\nThe Average is :" + avg);
-    }
+        }
 }
 
 // Test Data :

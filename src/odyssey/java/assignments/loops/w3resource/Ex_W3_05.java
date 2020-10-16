@@ -9,7 +9,7 @@ public class Ex_W3_05 {
         System.out.println("Input number of terms : ");
         s = in.nextInt();
 
-        for (i = 1; i <= s; i++) {
+        for (i = 1; i <= s; i++){
             System.out.println("Number is : " + i + " and cube of the " + i + " is : " + (i * i * i));
         }
     }

@@ -5,7 +5,25 @@ import java.util.Scanner;
 public class Ex_W3_23 {
     public static void main(String []args) { // Write a program in Java to display the sum of the series [ 1+x+x^2/2!+x^3/3!+....].
         Scanner in = new Scanner(System.in);
+        // Using While Loop
         float x,sum,rows;
+        int i,n;
+        System.out.println("Input the value of x : ");
+        x = in.nextInt();
+        System.out.println("Input number of terms : ");
+        n = in.nextInt();
+        sum =1; rows = 1;
+
+        i=1;
+        while(i<n){
+            rows = rows * x / (float)i;
+            sum =sum + rows;
+            i++;
+        }
+        System.out.println("The sum  is : " + sum);
+
+        // Using For Loop
+        /*float x,sum,rows;
         int i,n;
         System.out.println("Input the value of x : ");
         x = in.nextInt();
@@ -17,7 +35,8 @@ public class Ex_W3_23 {
             rows = rows * x / (float)i;
             sum =sum + rows;
         }
-        System.out.println("The sum  is : " + sum);
+        System.out.println("The sum  is : " + sum);*/
+
     }
 }
 

@@ -5,21 +5,46 @@ import java.util.Scanner;
 public class Ex_W3_19 {
     public static void main(String []args) { // Write a program in Java to display the n terms of harmonic series and their sum.
         Scanner in = new Scanner(System.in);
-        int i,n;
+        // Using While Loop
+        int i, n;
+        double s = 0.0;
+        System.out.println("Input the number of terms : ");
+        n = in.nextInt();
+
+        i=1;
+        while(i<=n){
+            if(i<n)
+            {
+                System.out.print("1/" + i + " + ");
+                s+=1/(float)i;
+            }
+            if(i==n)
+            {
+                System.out.println("1/" + i + " + ");
+                s+=1/(float)i;
+            }
+            i++;
+        }
+        System.out.println("Sum of Series upto " + n + " terms : " + s);
+
+        // Using For Loop
+        /*int i, n;
         double s = 0.0;
         System.out.println("Input the number of terms : ");
         n = in.nextInt();
         for(i=1;i<=n;i++){
-            if(i<n){
+            if(i<n)
+            {
                 System.out.print("1/" + i + " + ");
                 s+=1/(float)i;
             }
-            if(i==n){
+            if(i==n)
+            {
                 System.out.println("1/" + i + " + ");
                 s+=1/(float)i;
             }
         }
-        System.out.println("Sum of Series upto " + n + " terms : " + s);
+        System.out.println("Sum of Series upto " + n + " terms : " + s);*/
 
     }
 }

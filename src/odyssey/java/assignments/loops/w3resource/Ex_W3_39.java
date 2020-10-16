@@ -5,23 +5,43 @@ import java.util.Scanner;
 public class Ex_W3_39 {
     public static void main(String []args) { // Write a program in Java to find the number and sum of all integer between 100 and 200 which are divisible by 9.
         Scanner in = new Scanner(System.in);
-        int start, end, div;
+        // Using While Loop
+        int start, end, div, i, sum=0;
         System.out.println("Input beginning number: ");
         start = in.nextInt();
         System.out.println("Input ending number: ");
         end = in.nextInt();
         System.out.println("Input divisible number: ");
         div = in.nextInt();
-
-        int i, sum=0;
         System.out.println("Numbers between " + start + " and " + end + " divisible by " + div + " : ");
+        i=start;
+        while(i<end){
+            if(i%div==0){
+                System.out.print("  " + i); // OR.. System.out.printf("% 5d",i);
+                sum+=i;
+            }
+            i++;
+        }
+        System.out.println("\n\nThe sum :  " + sum);
+
+        // Using For Loop
+        /*int start, end, div, i, sum=0;
+        System.out.println("Input beginning number: ");
+        start = in.nextInt();
+        System.out.println("Input ending number: ");
+        end = in.nextInt();
+        System.out.println("Input divisible number: ");
+        div = in.nextInt();
+        System.out.println("Numbers between " + start + " and " + end + " divisible by " + div + " : ");
+
         for(i=start;i<end;i++){
             if(i%div==0){
                 System.out.print("  " + i); // OR.. System.out.printf("% 5d",i);
                 sum+=i;
             }
         }
-        System.out.println("\n\nThe sum :  " + sum);
+        System.out.println("\n\nThe sum :  " + sum);*/
+
     }
 }
 // Numbers between 100 and 200, divisible by 9 :

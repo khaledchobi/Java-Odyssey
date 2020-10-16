@@ -5,7 +5,31 @@ import java.util.Scanner;
 public class Ex_W3_28 {
     public static void main(String []args) { // Write a Java program to find the perfect numbers within a given number of range.
         Scanner in = new Scanner(System.in);
+        // Using While Loop
         int n,i,sum;
+        int mn,mx;
+        System.out.println("Input the starting range or number : ");
+        mn = in.nextInt();
+        System.out.println("Input the ending range of number : ");
+        mx = in.nextInt();
+        System.out.print("The Perfect numbers within the given range : ");
+        n=mn;
+        while(n<=mx){
+            i=1;
+            sum = 0;
+            while(i<n){
+                if(n%i==0)
+                    sum=sum+i;
+                i++;
+            }
+            if(sum==n)
+                System.out.print(n + " ");
+            n++;
+        }
+        System.out.println("");
+
+        // Using For Loop
+        /*int n,i,sum;
         int mn,mx;
         System.out.println("Input the starting range or number : ");
         mn = in.nextInt();
@@ -23,7 +47,8 @@ public class Ex_W3_28 {
             if(sum==n)
                 System.out.print(n + " ");
         }
-        System.out.println("");
+        System.out.println("");*/
+
     }
 }
 

@@ -5,7 +5,24 @@ import java.util.Scanner;
 public class Ex_W3_29 {
     public static void main(String []args) { // Write a Java program to check whether a given number is an armstrong number or not.
         Scanner in = new Scanner(System.in);
+        // Using While Loop
         int num, r, sum=0, temp;
+        System.out.println("Input  a number: ");
+        num = in.nextInt();
+
+        temp=num;
+        while(num!=0){
+            r=num % 10;
+            sum=sum+(r*r*r);
+            num=num/10;
+        }
+        if(sum==temp)
+            System.out.println( temp + " is an Armstrong number.\n");
+        else
+            System.out.println( temp + " is not an Armstrong number.\n");
+
+        // Using For Loop
+        /*int num, r, sum=0, temp;
         System.out.println("Input  a number: ");
         num = in.nextInt();
 
@@ -16,7 +33,8 @@ public class Ex_W3_29 {
         if(sum==temp)
             System.out.println( temp + " is an Armstrong number.\n");
         else
-            System.out.println( temp + " is not an Armstrong number.\n");
+            System.out.println( temp + " is not an Armstrong number.\n");*/
+
     }
 }
 

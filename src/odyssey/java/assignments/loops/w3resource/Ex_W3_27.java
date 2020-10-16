@@ -5,24 +5,47 @@ import java.util.Scanner;
 public class Ex_W3_27 {
     public static void main(String []args) { // Write a Java program to check whether a given number is a perfect number or not.
         Scanner in = new Scanner(System.in);
+        // Using While Loop
         int n,i,sum;
         System.out.println("Input the  number : ");
         n = in.nextInt();
         sum = 0;
         System.out.print("The positive divisor  : ");
-        for (i=1;i<n;i++){
-            if(n%i==0){
+        i=1;
+        while(i<n){
+            if(n%i==0)
+            {
                 sum=sum+i;
                 System.out.print(" " + i);
             }
+            i++;
         }
         System.out.print("\nThe sum of the divisor is : " + sum);
-
         if(sum==n)
             System.out.println("\nSo, the number is perfect.");
         else
             System.out.println("\nSo, the number is not perfect.");
         System.out.println("");
+
+        // Using For Loop
+        /*int n,i,sum;
+        System.out.println("Input the  number : ");
+        n = in.nextInt();
+        sum = 0;
+        System.out.print("The positive divisor  : ");
+        for (i=1;i<n;i++){
+            if(n%i==0)
+            {
+                sum=sum+i;
+                System.out.print(" " + i);
+            }
+        }
+        System.out.print("\nThe sum of the divisor is : " + sum);
+        if(sum==n)
+            System.out.println("\nSo, the number is perfect.");
+        else
+            System.out.println("\nSo, the number is not perfect.");
+        System.out.println("");*/
 
     }
 }

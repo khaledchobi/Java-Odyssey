@@ -5,15 +5,29 @@ import java.util.Scanner;
 public class Ex_W3_37 {
     public static void main(String []args) { // Write a program in Java to display the number in reverse order.
         Scanner in = new Scanner(System.in);
+        // Using While Loop
         int n, r = 0;
         System.out.println("Input a number : ");
         n = in.nextInt();
 
-        for(;n != 0; n /= 10){
+        while(n != 0) {
+            int dig = n % 10;
+            r = r * 10 + dig;
+            n /= 10;
+        }
+        System.out.println("The number in reverse order is : " + r);
+
+        // Using For Loop
+        /*int n, r = 0;
+        System.out.println("Input a number : ");
+        n = in.nextInt();
+
+        for(;n != 0; n /= 10) {
             int dig = n % 10;
             r = r * 10 + dig;
         }
-        System.out.println("The number in reverse order is : " + r);
+        System.out.println("The number in reverse order is : " + r);*/
+
     }
 }
 

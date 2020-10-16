@@ -5,7 +5,30 @@ import java.util.Scanner;
 public class Ex_W3_45 {
     public static void main(String []args) { // Write a program in Java to find LCM of any two numbers.
         Scanner in = new Scanner(System.in);
+        // Using While Loop
         int i, n1, n2, max, lcm=1;
+        System.out.println("LCM of two numbers : ");
+        System.out.println("Input 1st number for LCM : ");
+        n1 = in.nextInt();
+        System.out.println("Input 2nd number for LCM : ");
+        n2 = in.nextInt();
+
+        max = (n1>n2) ? n1 : n2;
+
+        i=max;
+        while(i >= lcm) {
+            if (i % n1 == 0 && i % n2 == 0) {
+                lcm = i;
+                break;
+            }
+            i+=max;
+
+        }
+        System.out.println("The LCM of " + n1 + " and " + n2 + " = " + lcm + ".");
+
+
+        // Using For Loop
+        /*int i, n1, n2, max, lcm=1;
         System.out.println("LCM of two numbers : ");
         System.out.println("Input 1st number for LCM : ");
         n1 = in.nextInt();
@@ -20,7 +43,8 @@ public class Ex_W3_45 {
                 break;
             }
         }
-        System.out.println("The LCM of " + n1 + " and " + n2 + " = " + lcm + ".");
+        System.out.println("The LCM of " + n1 + " and " + n2 + " = " + lcm + ".");*/
+
     }
 }
 

@@ -5,7 +5,29 @@ import java.util.Scanner;
 public class Ex_W3_42 {
     public static void main(String []args) { // Write a program in Java to convert a binary number into a decimal number without using array, function and while loop.
         Scanner in = new Scanner(System.in);
+        // Using While Loop
         int n, j, i=1, p=1, d, bin, dn=0;
+        System.out.println("Convert Binary to Decimal: ");
+        System.out.println("Input a binary number :");
+        n = in.nextInt();
+        bin=n;
+        j=n;
+        while(j>0){
+            d = j % 10;
+            if(i==1)
+                p=p*1;
+            else
+                p=p*2;
+
+            dn=dn+(d*p);
+            i++;
+            j=j/10;
+        }
+        System.out.println("The Binary Number : " + bin + " is the equivalent Decimal Number : " + dn + ".");
+
+
+        // Using For Loop
+        /*int n, j, i=1, p=1, d, bin, dn=0;
         System.out.println("Convert Binary to Decimal: ");
         System.out.println("Input a binary number :");
         n = in.nextInt();
@@ -16,10 +38,12 @@ public class Ex_W3_42 {
                 p=p*1;
             else
                 p=p*2;
+
             dn=dn+(d*p);
             i++;
         }
-        System.out.println("The Binary Number : " + bin + " is the equivalent Decimal Number : " + dn + ".");
+        System.out.println("The Binary Number : " + bin + " is the equivalent Decimal Number : " + dn + ".");*/
+
     }
 }
 

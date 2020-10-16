@@ -5,12 +5,10 @@ public class Ex_W3_01 {
         int  i;
         System.out.println("The first 10 natural number is : ");
 
-        for (i = 1; i <= 10; i++)
-        {
+        for (i = 1; i <= 10; i++){
             System.out.println(i);
         }
     }
-
 }
 
 // Expected Output :

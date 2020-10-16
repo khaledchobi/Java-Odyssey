@@ -11,6 +11,7 @@ public class Ex_W3_02 {
         }
         System.out.println("\nThe Sum is : " + sum);
     }
+
 }
 
 // Expected Output :

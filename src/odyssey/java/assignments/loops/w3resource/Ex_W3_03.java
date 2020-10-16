@@ -3,7 +3,6 @@ package src.odyssey.java.assignments.loops.w3resource;
 public class Ex_W3_03 {
     public static void main(String []args) { // Write a program in Java to display n terms of natural number and their sum.
         int i, n = 7, sum = 0;
-
         System.out.println("\nThe first " + n + " natural numbers are :\n");
 
         for (i = 1; i <= n; i++){
@@ -12,7 +11,6 @@ public class Ex_W3_03 {
         }
         System.out.println("\nThe Sum of Natural Number upto 7 terms : " + sum);
     }
-
 }
 
 // Test Data : 7

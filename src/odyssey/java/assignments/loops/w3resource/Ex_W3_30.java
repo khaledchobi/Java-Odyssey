@@ -5,7 +5,32 @@ import java.util.Scanner;
 public class Ex_W3_30 {
     public static void main(String []args) { // Write a Java program to find the Armstrong number for a given range of number.
         Scanner in = new Scanner(System.in);
+        // Using While Loop
         int num,r,sum,temp;
+        int start,end;
+        System.out.println("Input starting number of range: ");
+        start = in.nextInt();
+        System.out.println("Input ending number of range : ");
+        end = in.nextInt();
+
+        System.out.print("Armstrong numbers in given range are: ");
+        num=start;
+        while(num<=end){
+            temp=num;
+            sum = 0;
+            while(temp!=0){
+                r=temp % 10;
+                temp=temp/10;
+                sum=sum+(r*r*r);
+            }
+            if(sum==num)
+                System.out.print(" " + num);
+            num++;
+        }
+        System.out.println("\n");
+
+        // Using For Loop
+        /*int num,r,sum,temp;
         int start,end;
         System.out.println("Input starting number of range: ");
         start = in.nextInt();
@@ -24,7 +49,8 @@ public class Ex_W3_30 {
             if(sum==num)
                 System.out.print(" " + num);
         }
-        System.out.println("\n");
+        System.out.println("\n");*/
+
     }
 }
 // Input starting number of range: 1

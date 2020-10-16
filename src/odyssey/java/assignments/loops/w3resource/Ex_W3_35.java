@@ -5,7 +5,25 @@ import java.util.Scanner;
 public class Ex_W3_35 {
     public static void main(String []args) { // Write a program in Java to display the first n terms of Fibonacci series.
         Scanner in = new Scanner(System.in);
+        // Using While Loop
         int prv=0,pre=1,trm,i,n;
+        System.out.println("Input number of terms to  display : ");
+        n = in.nextInt();
+        System.out.println("Here is the Fibonacci series upto to " + n + " terms : \n");
+        System.out.printf("% 5d % 5d", prv,pre);
+        i=3;
+        while(i<=n){
+            trm=prv+pre;
+            System.out.printf("% 5d",trm);
+            prv=pre;
+            pre=trm;
+            i++;
+        }
+        System.out.println("\n");
+
+
+        // Using For Loop
+        /*int prv=0,pre=1,trm,i,n;
         System.out.println("Input number of terms to  display : ");
         n = in.nextInt();
         System.out.println("Here is the Fibonacci series upto to " + n + " terms : \n");
@@ -17,7 +35,8 @@ public class Ex_W3_35 {
             prv=pre;
             pre=trm;
         }
-        System.out.println("\n");
+        System.out.println("\n");*/
+
     }
 }
 

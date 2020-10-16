@@ -15,7 +15,6 @@ public class Ex_W3_08 {
             sum+=2*i-1;
         }
         System.out.println("\nThe Sum of odd Natural Number upto " + n + " terms : " + sum);
-
     }
 }
 // Test Data
